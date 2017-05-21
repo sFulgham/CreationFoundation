@@ -1,0 +1,16 @@
+<section class="col-lg-12 footer-section color dark-gray" ng-controller="privacyCtrl as pCtrl">
+    <article class="text-center">
+        <div>
+            Steven Fulgham © 2014 •
+                <span class="privacy-statement">
+                    <b>{{::pCtrl.model.header}}</b>
+                </span>
+        </div>
+        <div class="privacy-content hide">
+            <p>
+                {{::pCtrl.model.privacyStatement}}
+            </p>
+        </div>
+    </article>
+    {{pCtrl.onLoad()}}
+</section>

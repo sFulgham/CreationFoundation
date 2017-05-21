@@ -1,0 +1,16 @@
+<div class="about-me-wrapper col-lg-12">
+    <header class="page-title">
+        <h2 class="dropcap-large color"><span><%- header %></span></h2>
+    </header>
+    <article id="story">
+        <h3 class="color white"><%- articleHeader %></h3>
+        <% _.each(paragraphItems, function(item){ %>
+        <p style="margin-bottom: 30px;">
+            <%- item.blob %>
+        </p>
+        <% }); %>
+        <p style="margin-bottom: 30px;">
+            <span class="dropcap color">S</span>
+        </p>
+    </article>
+</div>

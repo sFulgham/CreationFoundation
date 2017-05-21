@@ -1,0 +1,47 @@
+<div class="container-fluid" ng-controller="portfolioCtrl as pc">
+    <nav id="portfolio-menu-nav" class="menu-nav open-nav" ng-click="pc.menuNavHandler($event)">
+        <span class="highlight-color"></span>
+        <span class="highlight-color"></span>
+        <span class="highlight-color"></span>
+    </nav>
+    <aside class="menu-panel">
+        <div class="row">
+            <nav class="nav-item-wrap">
+                <ul class="item-menu">
+                    <li ng-repeat="rootItem in pc.model.categoryItems ">
+                        <a href="#" class="trigger-sub" ng-click="pc.menuItemHandler($event)">{{::rootItem.category}}</a>
+                        <ul class="item-sub-menu">
+                            <li ng-repeat="subItem in rootItem.subCategory.category">
+                                <a href="#" class="trigger-sub-menu" data-category="{{::rootItem.category}}"
+                                   data-subCategory="{{::subItem.name}}" ng-click="pc.menuSubItemHandler($event)">{{::subItem.name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <section class="container">
+        <header class="page-title row">
+            <div class="col-md-12">
+                <h2 class="dropcap-large color">
+                    <span>{{::pc.model.header}}</span>
+                </h2>
+                <div class="select-text">Select a category.</div>
+            </div>
+        </header>
+    </section>
+    <section class="row">
+        <div class="swiper-container container">
+            <div class="swiper-wrapper col-md-12">
+            </div>
+        </div>
+        <div class="controls clickable">
+            <div class="page-buttons">
+                <div id="prev-btn" class="prev" ng-click="pc.nextBtnHandler($event)"></div>
+                <div id="next-btn" class="next" ng-click="pc.prevBtnHandler($event)"></div>
+            </div>
+        </div>
+    </section>
+    <div id="copyright"></div>
+</div>

@@ -1,0 +1,28 @@
+section#about{
+    padding: 100px 0 50px;
+}
+.about-me-wrapper {
+    padding: 20px 20px;
+    margin: 0 auto 50px !important;
+    float: none;
+}
+
+.about-me-wrapper h3 {
+    line-height: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #40b2d9;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.about-me-wrapper p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+header.page-title h2 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}

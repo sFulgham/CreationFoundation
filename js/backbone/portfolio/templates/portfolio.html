@@ -1,0 +1,48 @@
+<nav id="portfolio-menu-nav" class="menu-nav open-nav">
+    <span class="highlight-color"></span>
+    <span class="highlight-color"></span>
+    <span class="highlight-color"></span>
+</nav>
+<aside class="menu-panel">
+    <div class="row">
+        <nav class="nav-item-wrap">
+            <ul class="item-menu">
+                <% _.each(categoryItems, function(root){ %>
+                <li>
+                    <a href="#" class="trigger-sub"><%- root.category %></a>
+                    <ul class="item-sub-menu">
+                        <% _.each(root.subCategory.category, function(sub){%>
+                        <li><a href="#" class="trigger-sub-menu" data-category="<%- root.category %>"
+                               data-subCategory="<%- sub.name %>"><%- sub.name %></a></li>
+                        <% }); %>
+                    </ul>
+                </li>
+                <% }); %>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<section class="container">
+    <header class="page-title row">
+        <div class="col-md-12">
+            <h2 class="dropcap-large color">
+                <span><%- header %></span>
+            </h2>
+            <div class="select-text">Select a category.</div>
+        </div>
+    </header>
+</section>
+<section class="row">
+    <div class="swiper-container container">
+        <div class="swiper-wrapper col-md-12">
+        </div>
+    </div>
+    <div class="controls clickable">
+        <div class="page-buttons">
+            <div id="prev-btn" class="prev"></div>
+            <div id="next-btn" class="next"></div>
+        </div>
+    </div>
+</section>
+<div id="copyright"></div>
+

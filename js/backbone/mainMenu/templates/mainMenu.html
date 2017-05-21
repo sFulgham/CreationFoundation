@@ -1,0 +1,13 @@
+<li class="logo hide">
+    <img src="./css/images/cfLogo.png" alt="Creation Foundation">
+    <p><%- caption %></p>
+</li>
+<% _.each(menuItems, function(item){ %>
+<li class="<%- item.className %> hide">
+    <a href="<%- item.href %>"><%- item.title %></a>
+</li>
+<% }); %>
+
+
+
+

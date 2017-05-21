@@ -1,0 +1,193 @@
+.navbar-default {
+    border-color: #262d35;
+    background-color: rgba(18, 26, 34, 1);
+    margin-bottom: 0;
+    margin-left: 79.2px;
+    z-index: 992;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: transparent;
+}
+
+.navbar-default .navbar-header {
+    padding: 15px 0 14.5px;
+}
+
+.navbar-default .container {
+    margin: 0;
+    width: 100%;
+    border-left: 1px solid #262d35;
+}
+
+.navbar-shrink.navbar-default .navbar-brand {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.navbar-shrink.navbar-default .navbar-brand:hover,
+.navbar-shrink.navbar-default .navbar-brand:focus,
+.navbar-shrink.navbar-default .navbar-brand:active,
+.navbar-shrink.navbar-default .navbar-brand.active {
+    color: #40b2d9;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02);
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #121a22;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    border-color: #262d35;
+    background-color: #262d35;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.navbar-shrink.navbar-default .nav li a {
+    color: #fff;
+}
+
+.navbar-shrink.navbar-default .nav li a:hover {
+    outline: 0;
+    color: #40b2d9;
+}
+
+.navbar-shrink.navbar-default .nav li a:focus {
+    color: #fff;
+}
+
+.navbar-right {
+    padding: 14.5px 0;
+}
+
+.navbar-right li a,
+.navbar-default .nav li a {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #121a22;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #40b2d9;
+}
+
+.navbar-shrink.navbar-default .nav li.active a {
+    color: #121a22;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-default {
+        margin-left: 79.2px;
+        margin-bottom: 0;
+        border: 0;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        -o-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default.navbar-shrink {
+        border-bottom: 1px solid #262d35;
+    }
+
+    .navbar-default .navbar-nav > .active > a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        background-color: rgba(18, 26, 34, 1);
+    }
+
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        font-size: 2.7rem;
+        color: transparent;
+    }
+
+    .navbar-shrink.navbar-default .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-default .navbar-collapse.in .nav {
+        border-left: 1px solid transparent;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default .container {
+        border-bottom: 1px solid #262d35;
+    }
+
+    .navbar-default .navbar-header {
+        padding-bottom: 13px;
+    }
+
+    .navbar-default .navbar-collapse.in .nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 10px 0;
+        /*border-left: 1px solid #262d35;*/
+    }
+
+    .navbar-default .navbar-collapse.in .nav li a {
+        color: #fff;
+    }
+
+    .navbar-default .navbar-collapse.in .navbar-right li a:hover,
+    .navbar-default .navbar-collapse.in .navbar-right li a:focus {
+        outline: 0;
+        color: #40b2d9;
+    }
+
+    .navbar-default .navbar-collapse.in .navbar-right > .active > a {
+        border-radius: 0;
+        color: #40b2d9;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-shrink.navbar-default .navbar-brand {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        outline: 0;
+        color: #40b2d9;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .navbar-default .navbar-brand,
+    .navbar-shrink.navbar-default .navbar-brand {
+        font-size: 2rem;
+    }
+}

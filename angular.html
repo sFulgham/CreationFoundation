@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Steven Fulgham's Portfolio Using Angular</title>
+    <link rel="stylesheet" type="text/css" href="css/app.min.css?bust=v1.0">
+    <link rel="icon" type="image/png" href="css/images/favIco.png?bust=v1.0" />
+</head>
+<body>
+<div id="pre-loader" class="container text-center">
+    <i class="fa fa-spinner spin"></i>
+    <p class="loading-text">Initializing application.</p>
+</div>
+<main ui-view="layout" id="main" class="container angular-app"></main>
+<script src="js/plugins/require.js?bust=v1.0" type="text/javascript" data-main="js/angular/angularApp.min.js?bust=v1.0"
+        type="text/javascript"></script>
+</body>
+</html>

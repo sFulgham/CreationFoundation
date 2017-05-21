@@ -1,0 +1,14 @@
+<ul class="col-md-12" ng-controller="mainMenuCtrl as mm">
+    <li class="logo hide">
+        <img src="./css/images/cfLogo.png" alt="Creation Foundation">
+        <p>{{::mm.model.caption}}</p>
+    </li>
+    <li class="{{::item.className }} hide" ng-repeat="item in mm.model.menuItems">
+        <a href="{{::item.href }}">{{::item.title}}</a>
+    </li>
+</ul>
+
+
+
+
+

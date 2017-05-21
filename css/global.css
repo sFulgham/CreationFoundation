@@ -1,0 +1,263 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121a22;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.color.dark-gray {
+    background: #414141;
+    border-top: 1px dashed #fff;
+    color: #ccc;
+}
+
+.color.white {
+    color: #fff;
+}
+
+.color.dark-blue {
+    color: #121a22;
+}
+
+.color.highlight-blue {
+    color: #40b2d9;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fee35a;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #03193b;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.float-right {
+    float: right;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.btn-primary {
+    border-color: #fee35a;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fee35a;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fee35a;
+    background-color: #fee35a;
+}
+
+.btn-primary .badge {
+    color: #fee35a;
+    background-color: #fff;
+}
+
+.btn-xl,
+.btn-lg {
+    padding: 20px 40px;
+    border-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #121a22;
+}
+
+.btn-lg {
+    padding: 10px 15px;
+    margin: 20px 0 100px;
+    font-size: 1.5rem;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
+.btn-lg.active,
+.open .dropdown-toggle.btn-xl,
+.open .dropdown-toggle.btn-lg {
+    border-color: #121a22;
+    color: #121a22;
+    background-color: #fff;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #121a22;
+    background-color: #fff;
+}
+
+.btn-xl .badge {
+    color: #fee35a;
+    background-color: #fff;
+}
+
+.dropcap.color,
+.dropcap-large.color {
+    background: #121a22;
+    color: #fff;
+}
+
+#portfolio .dropcap-large.color {
+    background-color: #fff;
+    color: #121a22;
+    border-color: #121a22;
+}
+
+.dropcap {
+    background: #fcfcfc;
+    color: #666;
+    display: inline-block;
+    float: left;
+    font-size: 23px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 7px 0 0;
+    text-align: center;
+    width: 36px;
+    border: 1px solid #f6f6f6;
+}
+
+.dropcap-large {
+    display: inline-block;
+    border: 1px solid #f6f6f6;
+    padding: 10px;
+}
+
+div#pre-loader {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-top: 17%;
+    padding: 0;
+    position: absolute;
+    color: #fff;
+    z-index: 4000;
+}
+
+div#pre-loader p {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+div#pre-loader i.spin{
+    -webkit-animation: spin 0.7s infinite linear;
+    font-size: 4.3rem;
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    header.container .btn-xl {
+        display: none;
+    }
+}

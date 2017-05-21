@@ -1,0 +1,104 @@
+#portfolio .swiper-container.container {
+    height: 630px;
+    min-height: 630px;
+
+}
+
+#portfolio .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 10px 0 20px 4px;
+}
+
+#portfolio .swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .swiper-container .swiper-wrapper .swiper-slide:hover {
+    cursor: url('images/drag.png') 40 40, crosshair;
+}
+
+#portfolio .controls .page-buttons div {
+    cursor: pointer;
+}
+
+#portfolio .controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 1200;
+}
+
+#portfolio .controls .page-buttons div {
+    color: #121a22;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+    padding: 3px 10px;
+    font-size: 12px;
+    background: #869791;
+    filter: Alpha(Opacity=50); /*IE7 fix*/
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+#portfolio .controls.clickable .page-buttons div:hover {
+    filter: Alpha(Opacity=100); /*IE7 fix*/
+    opacity: 0.3;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#portfolio .prev {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: transparent url('images/prev.png') no-repeat center center !important;
+    margin-top: -22%;
+    left: 0;
+}
+
+#portfolio .next {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: transparent url('images/next.png') no-repeat center center !important;
+    margin-top: -22%;
+    right: 0;
+}
+
+#portfolio .prev:hover,
+#portfolio .next:hover{
+    cursor: pointer;
+    opacity: 0.3;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}

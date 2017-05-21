@@ -1,0 +1,30 @@
+footer.container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.footer-section {
+    padding: 4% 0;
+}
+
+.footer-section .privacy-statement {
+    margin: 0;
+    color: rgb(18,26,34);
+    cursor: pointer;
+}
+
+.footer-section .privacy-statement:hover {
+    color: #40b2d9;
+    text-decoration: none;
+}
+
+.footer-section .privacy-content {
+    margin: 30px 25% 0;
+    text-align: left;
+    display: none;
+}
+
+.footer-section h2 {
+    text-transform: none;
+}

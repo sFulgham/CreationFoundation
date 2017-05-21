@@ -1,0 +1,55 @@
+<article class="col-lg-12">
+    <header class="page-title">
+        <h2 class="dropcap-large color"><span>Contact</span></h2>
+    </header>
+    <aside class="contact-info">
+        <b>Steven Fulgham</b> •
+        Email: stevenfulgham333@gmail.com
+        <span class="sending-mail hide"><i class="fa fa-spinner spin">&nbsp;</i>Sending mail.</span>
+    </aside>
+    <section id="contact-form">
+        <form method="post">
+            <fieldset>
+                <div class="control-group">
+                    <div class="controls">
+                        <span class="help-inline"></span>
+                        <input tabindex="4" id="name" name="name" type="text" value="<%- name %>"
+                               class="col-md-12"
+                               placeholder="name:">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <span class="help-inline"></span>
+                        <input tabindex="2" id="email" name="email" type="text" value="<%- email %>"
+                               class="col-md-12"
+                               placeholder="email:">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <span class="help-inline"></span>
+                        <input tabindex="3" id="www" name="www" type="text" value="<%- www %>"
+                               class="col-md-12"
+                               placeholder="www:">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <span class="help-inline"></span>
+                        <textarea tabindex="3" class="input-xlarge col-md-12" id="message"
+                                  name="body" rows="7" placeholder="message:"
+                                  value="<%- message %>"></textarea>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="btn-overlay">
+                        <button tabindex="3" type="submit" class="btn btn-lg">
+                            <span>Send message</span>
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</article>
