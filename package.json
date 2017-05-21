@@ -42,7 +42,8 @@
     "mocha": "^2.2.5"
   },
   "scripts": {
-    "start": "webpack-dev-server & open http://localhost:8080/"
+    "dev": "webpack-dev-server & open http://localhost:8080/",
+    "start": "node index.js"
   },
   "author": "Steven Fulgham",
   "license": "UNLICENSED"
